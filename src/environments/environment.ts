@@ -1,5 +1,5 @@
+
 export const environment = {
-    production: false,
-  spaceId: 'SPACE_ID',
-  accessToken: 'ACCESS_TOKEN'
+  spaceId: 'xux148ew21yp',
+  accessToken: '3sevxnGapsvCay0s7h0YzitYqyafTIHnLLPGE7iRVIM'
 };
