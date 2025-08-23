@@ -1,0 +1,123 @@
+<div class="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 px-10 xl:px-32 pb-20 content">
+
+  <!-- About Me Section -->
+  <div
+    class="bg-white row-span-2 md:row-span-1 col-span-4 dark:bg-gray-800 rounded-[30px] p-6 sm:p-10 flex flex-col gap-4 md:h-[280px] hover:shadow-lg dark:hover:shadow-xl hover-trigger">
+    <div class="relative w-20 h-20 lg:w-24 lg:h-24 image-container">
+      <img class="default-image w-full h-full object-cover" src="assets/img/melaptop.jpg" alt="default image">
+      <img class="hover-image w-full h-full object-cover" src="assets/img/mepopers.jpg" alt="hover image">
+    </div>
+    <div class="relative inline-block">
+      <p class="font-medium text-gray-500 dark:text-gray-300 text-md">
+        {{ aboutme }}
+      </p>
+    </div>
+  </div>
+
+  <!-- Education Section -->
+  <div class="col-span-4 flex justify-center">
+    <div
+      class="w-full md:w-[90%] lg:w-[80%] xl:w-[65%] bg-white dark:bg-gray-800 rounded-[30px] p-6 flex flex-col gap-4 hover:shadow-lg dark:hover:shadow-xl hover-trigger">
+
+      <!-- Education Heading -->
+      <span class="font-bold font-playwrite text-3xl lg:text-4xl text-black dark:text-white inline-block mb-4">
+        🎓 Education
+      </span>
+
+      <!-- Education List -->
+      <div class="flex flex-col gap-6">
+        @for (item of education; track $index) {
+        <div
+          class="rounded-2xl p-5 border border-gray-300 dark:border-sky-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-lg transition-all duration-300">
+          <h3 class="text-lg md:text-2xl font-semibold text-sky-800 dark:text-white mb-2">
+            {{ item.qualified }}
+          </h3>
+          <div class="flex flex-col md:flex-row md:justify-between mb-1 md:mb-2">
+            <p class="text-md md:text-lg font-medium text-gray-800 dark:text-white">
+              {{ item.studied_at }}
+            </p>
+            <p class="text-sm md:text-md text-gray-500 dark:text-gray-300">
+              {{ item.time_period }}
+            </p>
+          </div>
+          <p class="text-sm md:text-md font-medium text-gray-500 dark:text-gray-300">
+            {{ item.place }}
+          </p>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Work Section -->
+  <div class="col-span-4 flex justify-center">
+    <div
+      class="w-full md:w-[90%] lg:w-[80%] xl:w-[65%] bg-white dark:bg-gray-800 rounded-[30px] p-6 flex flex-col gap-4 hover:shadow-lg dark:hover:shadow-xl hover-trigger">
+
+      <!-- Social Work Heading -->
+      <span class="font-bold font-playwrite text-3xl lg:text-4xl text-black dark:text-white inline-block mb-4">
+        🤝 Social Work
+      </span>
+
+      <!-- Social Work Section -->
+<div class="col-span-4 flex justify-center">
+  <div
+    class="w-full md:w-[90%] lg:w-[80%] xl:w-[65%] bg-white dark:bg-gray-800 rounded-[30px] p-6 flex flex-col gap-4 hover:shadow-lg dark:hover:shadow-xl hover-trigger">
+
+    <!-- Social Work Heading -->
+    <span class="font-bold font-playwrite text-3xl lg:text-4xl text-black dark:text-white inline-block mb-4">
+      🤝 Social Work
+    </span>
+
+    <!-- Social Work List -->
+    <div class="flex flex-col gap-6">
+      @for (work of socialWork; track $index) {
+      <div
+        class="rounded-2xl p-5 border border-gray-300 dark:border-green-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-lg transition-all duration-300">
+
+        <h3 class="text-lg md:text-2xl font-semibold text-green-800 dark:text-white mb-1">
+          <a [href]="work.ngo_website" target="_blank" class="hover:underline">{{ work.ngo_name }}</a>
+        </h3>
+
+        <p class="text-md font-medium text-gray-800 dark:text-white mb-1">
+          {{ work.role }}
+        </p>
+
+        <p class="text-sm md:text-md text-gray-500 dark:text-gray-300 mb-3">
+          {{ work.time_period }}
+        </p>
+
+        <!-- Description in bullet points -->
+        <ul class="list-disc list-inside text-sm md:text-md text-gray-600 dark:text-gray-300 mb-4">
+          @for (point of work.description; track $index) {
+          <li>{{ point }}</li>
+          }
+        </ul>
+
+        <!-- Visit website button -->
+        <div class="mb-4">
+          <a
+            [href]="work.ngo_website"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full ring-1 ring-gray-300 dark:ring-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+            <span>Visit website</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 7h6m0 0v6m0-6L10 16" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Reduced Certificate Image -->
+        <img [src]="work.certificate" alt="Certificate"
+             class="rounded-lg shadow-md max-w-[300px] h-auto mx-auto">
+      </div>
+      }
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+</div>
