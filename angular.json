@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/akshay",
+            "outputPath": "dist/arshita",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "akshay:build:production"
+              "buildTarget": "arshita:build:production"
             },
             "development": {
-              "buildTarget": "akshay:build:development"
+              "buildTarget": "arshita:build:development"
             }
           },
           "defaultConfiguration": "development"
