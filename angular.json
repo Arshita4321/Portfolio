@@ -2,8 +2,9 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "defaultProject": "arshita",
   "projects": {
-    "akshay": {
+    "arshita": {
       "projectType": "application",
       "schematics": {},
       "root": "",
