@@ -11,7 +11,7 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 })
 export class ContactMeComponent {
   constructor(public confettiService: ConfettiService) { }
-  value ="sr.dev.akshay@gmail.com"
+  value ="sr.dev.arshitathakur488@gmail.com"
 
   handleClick(event: MouseEvent) {
     event.preventDefault();  // Prevent default link behavior
@@ -19,6 +19,6 @@ export class ContactMeComponent {
     // Trigger confetti animation
     this.confettiService.stars();
     setTimeout(() => {
-      window.location.href = 'https://github.com/Akshayp2002/personal-portfolio-angular';
+      window.location.href = 'https://github.com/Arshita4321/Portfolio';
     }, 2000);  // Redirect after 2 seconds
 }}

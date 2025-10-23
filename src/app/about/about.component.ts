@@ -36,7 +36,7 @@ export class AboutComponent {
     },
     {
       studied_at: "New Era",
-      qualified: "Plus Two Computer Science",
+      qualified: "12th ",
       time_period: "2021 - 2022",
       place: "Hamirpur, Himachal Pradesh",
     },
