@@ -10,6 +10,25 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects: Array<any> = [
     {
+      name: "WitWizHub- Study planner",
+      description: "An Excel-based dashboard to analyze crop production with interactive filters and toggles for light/dark modes. Ideal for data-driven agricultural insights.",
+      image: "assets/img/witwizhub.png",
+      github: false,
+      view: "https://github.com/Arshita4321/WitWizHub",
+      status: true,
+      date: "June - Present",
+      demo: true,
+      tech: [
+        { name: "NodeJS", image: "assets/img/nodejs.svg" },
+        { name: "MongoDB", image: "assets/img/mongodb.svg" },
+        { name: "Bootstrap", image: "assets/img/bootstrap.svg" },
+        { name: "Material-UI", image: "assets/img/material-ui.svg" },
+        { name: "React", image: "assets/img/react.svg" },
+        { name: "Tailwind CSS", image: "assets/img/tailwindcss.svg" },
+        { name: "Hoppscotch", image: "assets/img/hoppscotch.svg" },
+      ]
+    },
+    {
       name: "JobPortal",
       description: "A web-based job portal where users can apply for jobs, manage applications, and view job listings. Built using a robust Node.js backend and styled for a clean user experience.",
       image: "assets/img/jobportal.png",
