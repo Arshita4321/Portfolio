@@ -14,11 +14,11 @@ export class ContactMeComponent {
   value ="sr.dev.arshitathakur488@gmail.com"
 
   handleClick(event: MouseEvent) {
-    event.preventDefault();  // Prevent default link behavior
+    event.preventDefault();  
 
     // Trigger confetti animation
     this.confettiService.stars();
     setTimeout(() => {
       window.location.href = 'https://github.com/Arshita4321/Portfolio';
-    }, 2000);  // Redirect after 2 seconds
+    }, 2000);  
 }}

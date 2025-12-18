@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
   gridCols: string | undefined;
 
   celebrate() {
-    const duration = 3000; // in milliseconds
+    const duration = 3000;
 
     confetti({
       particleCount: 100,
@@ -23,7 +23,7 @@ export class ProfileComponent implements OnInit {
       origin: { y: 0.6 },
     });
 
-    // Clear confetti after a certain duration
+   
     setTimeout(() => confetti.reset(), duration);
     
   }
@@ -31,13 +31,13 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     this.updateGridCols(window.innerWidth);
 
-    // Delay the popup and animation by 3 seconds
+   
     setTimeout(() => {
       this.showPopup = true;
-      // Trigger the animation after showing the popup
+     
       setTimeout(() => {
         this.animatePopup = true;
-      }, 50);  // Small delay to allow DOM to render
+      }, 50);  
     }, 2500); // 3 seconds delay for popup
   
   }

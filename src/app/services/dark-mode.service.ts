@@ -17,7 +17,7 @@ export class DarkModeService {
   constructor() {
     effect(() => {
       window.localStorage.setItem('darkModeSignel', JSON.stringify(this.darkModeSignel()));
-      // Update the body class globally to reflect the mode change.
+      
       if (this.darkModeSignel() === 'dark') {
         document.body.classList.add('dark');
       } else {

@@ -10,6 +10,40 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects: Array<any> = [
     {
+      name: "Student Placement Readiness Prediction Model",
+      description: "A machine learning–based predictive analytics project that analyzes primary data collected from students to classify placement readiness. The system evaluates academic performance, study habits, stress levels, and AI tool usage using multiple ML models with visual insights and comparative evaluation.",
+      image: "assets/img/placement.png",
+      github: "https://github.com/Arshita4321/Placement-Readiness-Prediction-Model",
+      view: "https://github.com/Arshita4321/Placement-Readiness-Prediction-Model",
+      status: true,
+      date: "December 2025",
+      demo: true,
+      tech: [
+        { name: "Python", image: "assets/img/python.svg" },
+        { name: "Pandas", image: "assets/img/pandas.png" },
+        { name: "NumPy", image: "assets/img/numpy.png" },
+        { name: "Scikit-learn", image: "assets/img/sckit-learn.png" },
+        { name: "Matplotlib", image: "assets/img/matplotlib.jpg" },
+        { name: "Seaborn", image: "assets/img/seaborn.png" },
+      ]
+    }, 
+    {
+      name: "WHO Air Pollution Analytics",
+      description: "An interactive Power BI dashboard that analyzes global air quality using WHO data. The dashboard provides insights into pollution trends, monitoring stations, AQI levels, and regional variations through dynamic KPIs, maps, and advanced visualizations.",
+      image: "assets/img/dashboard.png",
+      github: false,
+      view: "https://www.linkedin.com/posts/arshita-thakur-25b082294_i-recently-built-an-air-pollution-analysis-activity-7404959259202879488-3-lY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEczlucBuWOIts1kYX2d-vG-j46XslQxJTE",
+      status: true,
+      date: "December 2025",
+      demo: true,
+      tech: [
+        { name: "Power BI", image: "assets/img/powerbi.jpg" },
+        { name: "Power Query", image: "assets/img/powerquery.jpg" },
+        { name: "DAX", image: "assets/img/dax.png" },
+        { name: "Microsoft Excel", image: "assets/img/excel.svg" },
+      ]
+    },
+    {
       name: "WitWizHub- Study planner",
       description: "An Excel-based dashboard to analyze crop production with interactive filters and toggles for light/dark modes. Ideal for data-driven agricultural insights.",
       image: "assets/img/witwizhub.png",
